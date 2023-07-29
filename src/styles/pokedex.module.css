@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pokedex{
+    width: 600px;
+}
+.pokemon{
+    position: absolute;
+    width: 150px;
+    top:40%;
+    left: 40.5%;
+    transform: translate(-50%,-50%);
+
+}
+.infopokedex{
+    width: 200px;
+    position: absolute;
+    right:25.2%;
+    top: 37%;
+    transform: translate(-50%,-50%);
+}
+.habilidadepokedex{
+    
+    width: 200px;
+    position: absolute;
+    right:25.2%;
+    transform: translate(-50%,-50%);
+
+  
+}
+.habilidadepokedex.habilidade1 {
+    top: 49%;
+  }
+  .habilidadepokedex.habilidade2 {
+    top: 53%;
+  }
+  .habilidadepokedex.habilidade3 {
+    top: 53%;
+  }

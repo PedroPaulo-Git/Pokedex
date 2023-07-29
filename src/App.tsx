@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Pokedexbackground from './imgs/pokedex.png';
+import styles from '../src/styles/pokedex.module.css';
 import './App.css';
 import { error } from 'console';
 
@@ -43,17 +45,36 @@ function App() {
     <button onClick={handleSearch}>Procurar</button>
 
 
-    <h2>Nome : {name}</h2>
-    <h2>Peso : {weight}</h2>
-    <img src=
-    {data?data.sprites.other.dream_world.front_default:
+<div className={styles.pokedexall}>
+
+    <img className={styles.pokedex} src={Pokedexbackground} alt="" />
+    <img className={styles.pokemon} src=
+    {data?data.sprites.front_default:
     "<p>Carregando...</p>"} alt="" />
-    <p>Minhas Habilidades são:</p>
+
+</div>
+
+
+  <div className={styles.infopokedex}>
+          <h2>{name}</h2>
+          <h2>Peso : {weight}</h2>
+          <p>Habilidades:</p>
+    </div>
+    
+
     {data?data.abilities.map((value:any,key:any)=>{
+
       return(
-        <div key = {key}>
+        
+        <div
+        key={key}
+        className={`${styles.habilidadepokedex} ${styles['habilidade' + (key + 1)]}`}
+      >
+          
           {value.ability.name}
-        </div>
+          
+    
+        </div> 
       )
     }):""}
     
