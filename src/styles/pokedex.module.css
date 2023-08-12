@@ -76,7 +76,7 @@ body{
     background-color:rgb(70, 69, 69);
     margin-left: 20px;
     border-radius: 5px;
-    box-shadow: 4px 6px rgb(20, 20, 20);
+    box-shadow: -2px 4px 0px 2px  rgb(20, 20, 20);
     outline: none;
     color: rgb(211, 207, 207);
     font-weight: 600;
@@ -86,7 +86,7 @@ body{
     font-weight: 600;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 4px 6px rgb(78, 78, 78);
+    box-shadow: -2px 4px 0px 2px  rgb(78, 78, 78);
     outline: none;
     border: 2px solid rgb(61, 61, 61);
 }
@@ -135,9 +135,6 @@ body{
     outline: none;
 
     animation:mexer 0.5s;
-   
-}
-.error::after{
    
 }
 
